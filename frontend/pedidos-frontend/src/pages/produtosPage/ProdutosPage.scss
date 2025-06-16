@@ -1,0 +1,151 @@
+.produtos-page {
+  padding: 2rem;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+
+  h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1rem;
+
+    .p-button {
+      background-color: #dc2626;
+      color: white;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: none;
+
+      &:hover {
+        background-color: #b91c1c;
+      }
+    }
+  }
+
+  .produtos-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .produto-card {
+    width: 250px;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    background: #ffffff;
+    text-align: center;
+
+    .preco {
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+      color: #555;
+    }
+
+    .botao-fazer-pedido {
+      background-color: #0077b6 !important;
+      color: white !important;
+      border: none !important;
+      margin-top: 0.5rem;
+
+      &:hover {
+        background-color: #005f8d !important;
+      }
+
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+
+      &:disabled {
+        background-color: #93c5fd !important;
+        color: white !important;
+      }
+    }
+
+    .botoes-acoes-produto {
+      margin-top: 0.8rem;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+
+      .p-button-warning {
+        background-color: #f59e0b;
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: #d97706;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+
+      .p-button-danger {
+        background-color: #dc2626;
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: #b91c1c;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .botoes-rodape {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+
+    .p-button-secondary {
+      background-color: #6b7280;
+      color: white;
+
+      &:hover {
+        background-color: #4b5563;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+
+    .p-button {
+      border-radius: 8px;
+      font-weight: bold;
+    }
+
+    .p-button:nth-child(2) {
+      background-color: #0077b6 !important;
+      color: white !important;
+
+      &:hover {
+        background-color: #005f8d;
+      }
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

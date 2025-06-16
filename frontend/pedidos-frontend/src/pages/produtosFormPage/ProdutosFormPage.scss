@@ -1,0 +1,87 @@
+.produtos-form-page {
+  max-width: 500px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+
+  h2 {
+    color: #003366; 
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+  }
+
+  .field {
+    margin-bottom: 1.2rem;
+    text-align: left;
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    input,
+    .p-inputnumber-input {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .p-inputnumber-button-group {
+      .p-button {
+        background-color: #0077b6 !important  ;
+        color: white !important;
+        border: none !important;
+
+        &:hover {
+          background-color: #005f8d;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+  .buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+
+    button {
+      flex: 1;
+      border-radius: 8px;
+      font-weight: bold;
+      outline: none;
+      box-shadow: none;
+
+      &:focus {
+        outline: none;
+        box-shadow: none;
+      }
+    }
+
+    .p-button {
+      background-color: #0077b6;
+      color: white;
+
+      &:hover {
+        background-color: #005f8d;
+      }
+    }
+
+    .p-button-secondary {
+      background-color: #6b7280;
+      color: white;
+
+      &:hover {
+        background-color: #4b5563;
+      }
+    }
+  }
+}

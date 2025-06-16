@@ -1,0 +1,185 @@
+.pedidos-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #f0f4f8;
+  min-height: 100vh;
+
+  h2 {
+    text-align: center;
+    color: #003366;
+    margin-bottom: 1.5rem;
+  }
+
+  .p-datatable {
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #ffffff;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  }
+
+  .action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    .p-button {
+      border-radius: 6px;
+    }
+
+    .p-button-warning {
+      background-color: #f59e0b;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: #d97706;
+      }
+    }
+
+    .p-button-danger {
+      background-color: #dc2626;
+      color: white;
+      border: none;
+
+      &:hover {
+        background-color: #b91c1c;
+      }
+    }
+  }
+
+  .voltar-button-container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  .p-button-secondary {
+    background-color: #6b7280;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #4b5563;
+    }
+  }
+
+  .p-button-success {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      background-color: #005f8d;
+    }
+  }
+
+  .dialog-footer {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .field {
+    margin-bottom: 1rem;
+    text-align: left;
+
+    label {
+      display: block;
+      margin-bottom: 0.4rem;
+      font-weight: 600;
+      color: #555;
+    }
+
+    input,
+    .p-inputnumber-input {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+
+//Dialog
+.custom-dialog {
+  .p-dialog-header {
+    background-color: #0077b6;
+    color: white;
+    font-weight: bold;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    padding: 1rem 1.5rem;
+  }
+
+  .p-dialog-content {
+    padding: 1.5rem;
+
+    p {
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 1rem;
+    }
+
+    .field {
+      margin-bottom: 1.5rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        font-weight: 600;
+        color: #555;
+      }
+
+      input,
+      .p-inputnumber-input {
+        width: 100%;
+        border-radius: 8px;
+      }
+
+      .p-inputnumber {
+        width: 100%;
+      }
+
+      .p-inputnumber-button-group .p-button {
+        background-color: #0077b6;
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: #005f8d;
+        }
+
+        &:focus {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .dialog-footer {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+
+      .p-button-success {
+        background-color: #0077b6;
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: #005f8d;
+        }
+      }
+
+      .p-button-secondary {
+        background-color: #6b7280;
+        color: white;
+        border: none;
+
+        &:hover {
+          background-color: #4b5563;
+        }
+      }
+    }
+  }
+}
