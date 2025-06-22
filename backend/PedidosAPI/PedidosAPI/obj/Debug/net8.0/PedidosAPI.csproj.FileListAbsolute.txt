@@ -171,3 +171,4 @@ C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\Pedidos
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI\obj\Debug\net8.0\PedidosAPI.pdb
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI\obj\Debug\net8.0\PedidosAPI.genruntimeconfig.cache
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI\obj\Debug\net8.0\ref\PedidosAPI.dll
+C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
