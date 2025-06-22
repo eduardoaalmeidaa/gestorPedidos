@@ -52,7 +52,6 @@ namespace PedidosAPI.Controllers
             _context.Pedidos.Add(pedido);
             await _context.SaveChangesAsync();
 
-            // ✅ Agora chama o serviço de pagamento
             await _pagamentoService.ProcessarPagamentoAsync(pedido);
             await _context.SaveChangesAsync();
 

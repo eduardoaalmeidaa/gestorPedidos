@@ -62,7 +62,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Garantir criação do banco
 using (var scope = app.Services.CreateScope())
 {
     var dbContext = scope.ServiceProvider.GetRequiredService<AppDbContext>();
