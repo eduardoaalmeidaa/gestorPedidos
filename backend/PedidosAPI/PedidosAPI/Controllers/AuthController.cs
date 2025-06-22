@@ -20,6 +20,7 @@ namespace PedidosAPI.Controllers
             _jwtTokenGenerator = jwtTokenGenerator;
         }
 
+        // POST: /api/auth/register
         [HttpPost("register")]
         [AllowAnonymous]
         public IActionResult Register([FromBody] RegisterUserDTO dto)
@@ -47,6 +48,7 @@ namespace PedidosAPI.Controllers
             return Ok("Usuário cadastrado com sucesso!");
         }
 
+        // POST: /api/auth/login
         [HttpPost("login")]
         [AllowAnonymous]
         public IActionResult Login(LoginUserDTO dto)

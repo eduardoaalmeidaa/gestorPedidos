@@ -23,6 +23,7 @@ namespace PedidosAPI.Controllers
             _pagamentoService = pagamentoService;
         }
 
+        // POST: /api/pedidos
         [HttpPost]
         public async Task<IActionResult> CriarPedido([FromBody] CriarPedidoDTO dto)
         {
@@ -58,6 +59,7 @@ namespace PedidosAPI.Controllers
             return Ok(pedido);
         }
 
+        // GET: /api/pedidos
         [HttpGet]
         public async Task<IActionResult> GetPedidosDoUsuario()
         {
@@ -79,6 +81,7 @@ namespace PedidosAPI.Controllers
             return Ok(pedidos);
         }
 
+        // PUT: /api/pedidos/{id}
         [HttpPut("{id}")]
         public async Task<IActionResult> EditarPedido(int id, [FromBody] EditarPedidoDTO dto)
         {
@@ -95,6 +98,7 @@ namespace PedidosAPI.Controllers
             return Ok(pedido);
         }
 
+        // DELETE: /api/pedidos/{id}
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletarPedido(int id)
         {

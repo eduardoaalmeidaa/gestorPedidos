@@ -4,6 +4,7 @@ C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\Pedidos
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\PedidosAPI.runtimeconfig.json
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\appsettings.json
+C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\PedidosAPI.staticwebassets.endpoints.json
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\PedidosAPI.exe
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\testhost.exe
 C:\Users\Eduardo Almeida\OneDrive\Área de Trabalho\FIESCproject\backend\PedidosAPI\PedidosAPI.Tests\bin\Debug\net8.0\xunit.runner.visualstudio.dotnetcore.testadapter.dll
