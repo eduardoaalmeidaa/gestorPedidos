@@ -7,7 +7,6 @@ import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import "./ProdutosFormPage.scss";
 import { Toast } from "primereact/toast";
-import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 
 export default function ProdutosFormPage() {
   const toast = useRef<Toast>(null);
