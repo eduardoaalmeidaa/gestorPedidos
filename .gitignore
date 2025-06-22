@@ -1,1 +1,29 @@
+# Ignore build outputs (Back-end .NET)
+**/bin/
+**/obj/
+
+# Ignore Node.js dependencies (Front-end)
+**/node_modules/
+
+# Ignore frontend build outputs
+**/build/
+**/dist/
+
+# Ignore environment variables
+.env
+.env.*
+
+# Ignore logs
+*.log
+
+# Ignore TypeScript cache
+**/*.tsbuildinfo
+
+# VS Code settings
+.vscode/
+
+# Visual Studio settings
 .vs/
+
+# Docker artefacts
+**/docker-compose.override.yml
