@@ -62,8 +62,8 @@
 ### 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/gestorPedidos.git
-cd gestorPedidos
+git clone https://github.com/eduardoaalmeidaa/gestorPedidos.git
+cd gestorPedidos`
 ```
 
 ### 2. Rode o Docker Compose:
