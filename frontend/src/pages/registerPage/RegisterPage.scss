@@ -3,18 +3,18 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background-color: #f0f4f8;
+  background-color: #121212; 
 
   .register-card {
     width: 400px;
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    background: #ffffff;
+    background: #1e1e1e; 
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
 
     .p-card-title {
       font-size: 1.8rem;
-      color: #003366; 
+      color: #ffffff; 
       margin-bottom: 1.5rem;
       text-align: center;
     }
@@ -25,14 +25,22 @@
       label {
         display: block;
         margin-bottom: 0.4rem;
-        font-weight: 600;
-        color: #555;
+        font-weight: 500;
+        color: #bbbbbb; 
       }
 
       input,
       .p-password-input {
         width: 100%;
         border-radius: 8px;
+        background: #2a2a2a;
+        border: 1px solid #444;
+        color: #e0e0e0;
+
+        &:focus {
+          border-color: #4db8ff;
+          box-shadow: 0 0 0 2px rgba(77, 184, 255, 0.3);
+        }
       }
     }
 
@@ -45,22 +53,21 @@
       button {
         flex: 1;
         border-radius: 8px;
+        font-weight: bold;
       }
 
       .register-button {
-        background-color: #0077b6; 
-        color: white;
-        font-weight: bold;
+        background-color: #4db8ff; 
+        color: #121212;
 
         &:hover {
-          background-color: #005f8d;
+          background-color: #1a9be0;
         }
       }
 
       .p-button-secondary {
-        background-color: #6b7280;
-        color: white;
-        font-weight: bold;
+        background-color: #6b7280; 
+        color: #ffffff;
 
         &:hover {
           background-color: #4b5563;

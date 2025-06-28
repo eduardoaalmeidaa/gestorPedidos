@@ -1,11 +1,11 @@
 .produtos-page {
   padding: 2rem;
-  background-color: #f0f4f8;
+  background-color: #121212;
   min-height: 100vh;
 
   h2 {
     text-align: center;
-    color: #003366;
+    color: #ffffff;
     margin-bottom: 1.5rem;
     font-size: 1.8rem;
   }
@@ -17,7 +17,7 @@
 
     .p-button {
       background-color: #dc2626;
-      color: white;
+      color: #ffffff;
       border-radius: 50%;
       width: 40px;
       height: 40px;
@@ -44,24 +44,28 @@
     width: 250px;
     padding: 1rem;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    background: #ffffff;
+    background: #1e1e1e;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     text-align: center;
 
     .preco {
       font-weight: bold;
       margin-bottom: 0.5rem;
-      color: #555;
+      color: #bbbbbb;
+    }
+
+    p {
+      color: #e0e0e0;
     }
 
     .botao-fazer-pedido {
-      background-color: #0077b6 !important;
-      color: white !important;
+      background-color: #4db8ff !important;
+      color: #121212 !important;
       border: none !important;
       margin-top: 0.5rem;
 
       &:hover {
-        background-color: #005f8d !important;
+        background-color: #1a9be0 !important;
       }
 
       &:focus {
@@ -71,7 +75,7 @@
 
       &:disabled {
         background-color: #93c5fd !important;
-        color: white !important;
+        color: #121212 !important;
       }
     }
 
@@ -83,7 +87,7 @@
 
       .p-button-warning {
         background-color: #f59e0b;
-        color: white;
+        color: #121212;
         border: none;
 
         &:hover {
@@ -97,7 +101,7 @@
 
       .p-button-danger {
         background-color: #dc2626;
-        color: white;
+        color: #ffffff;
         border: none;
 
         &:hover {
@@ -119,7 +123,7 @@
 
     .p-button-secondary {
       background-color: #6b7280;
-      color: white;
+      color: #ffffff;
 
       &:hover {
         background-color: #4b5563;
@@ -136,11 +140,11 @@
     }
 
     .p-button:nth-child(2) {
-      background-color: #0077b6 !important;
-      color: white !important;
+      background-color: #4db8ff !important;
+      color: #121212 !important;
 
       &:hover {
-        background-color: #005f8d;
+        background-color: #1a9be0 !important;
       }
 
       &:focus {

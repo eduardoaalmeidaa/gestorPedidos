@@ -3,19 +3,20 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #f0f4f8; 
+  background-color: #121212; 
+  color: #e0e0e0; 
 
   .login-card {
-    background: #ffffff;
+    background: #1e1e1e; 
     padding: 2rem;
     border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
     width: 320px;
     text-align: center;
 
     h2 {
       margin-bottom: 1.5rem;
-      color: #003366; 
+      color: #ffffff;
       font-size: 1.8rem;
     }
 
@@ -26,28 +27,36 @@
       label {
         display: block;
         margin-bottom: 0.4rem;
-        font-weight: 600;
-        color: #555;
+        font-weight: 500;
+        color: #bbbbbb;
       }
 
       input,
       .p-password-input {
         width: 100%;
         border-radius: 8px;
+        background: #2a2a2a;
+        border: 1px solid #444;
+        color: #e0e0e0;
+
+        &:focus {
+          border-color: #4db8ff;
+          box-shadow: 0 0 0 2px rgba(77, 184, 255, 0.3);
+        }
       }
     }
 
     .login-button {
       width: 100%;
-      background-color: #0077b6; 
-      color: white;
+      background-color: #4db8ff;
+      color: #121212;
       font-weight: bold;
       border-radius: 8px;
       margin-top: 0.5rem;
       transition: 0.2s;
 
       &:hover {
-        background-color: #005f8d; 
+        background-color: #1a9be0;
       }
     }
 
@@ -56,22 +65,14 @@
       font-size: 0.9rem;
 
       span {
-        color: #0077b6;
+        color: #4db8ff;
         cursor: pointer;
         text-decoration: underline;
 
         &:hover {
-          color: #005f8d;
+          color: #1a9be0;
         }
       }
-    }
-
-    .fiesc-logo {
-      width: 160px;
-      margin-bottom: 20px;
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
     }
   }
 }

@@ -4,12 +4,11 @@ import axios from "axios";
 import { DataTable } from "primereact/datatable";
 import { Column } from "primereact/column";
 import { Button } from "primereact/button";
-import { Dialog } from "primereact/dialog";
-import { InputNumber } from "primereact/inputnumber";
 import { useNavigate } from "react-router-dom";
 import { Toast } from "primereact/toast";
 import { ConfirmDialog, confirmDialog } from "primereact/confirmdialog";
 import "./PedidosPage.scss";
+import { EditarPedidoDialog } from "../../components/EditarPedidoDialog";
 
 interface Pedido {
   id: number;
@@ -66,8 +65,8 @@ export default function PedidosPage() {
       message: "Tem certeza que deseja excluir este pedido?",
       header: "Confirmação",
       icon: "pi pi-exclamation-triangle",
-      acceptLabel: "Sim",
       rejectLabel: "Não",
+      acceptLabel: "Sim",
       acceptClassName: "p-button-danger",
       accept: () => excluirPedido(id),
     });
@@ -123,7 +122,6 @@ export default function PedidosPage() {
       life: 3000,
     });
   };
-
   const showError = (detail: string) => {
     toast.current?.show({
       severity: "error",
@@ -138,7 +136,6 @@ export default function PedidosPage() {
       <h2>Meus Pedidos</h2>
       <Toast ref={toast} position="top-center" />
       <ConfirmDialog />
-
       <DataTable
         value={pedidos}
         loading={loading}
@@ -156,7 +153,6 @@ export default function PedidosPage() {
         />
         <Column header="Ações" body={renderAcoes} style={{ width: "100px" }} />
       </DataTable>
-
       <div className="voltar-button-container">
         <Button
           label="Voltar"
@@ -164,46 +160,14 @@ export default function PedidosPage() {
           onClick={() => navigate("/produtos")}
         />
       </div>
-
-      <Dialog
-        header="Editar Pedido"
+      <EditarPedidoDialog
         visible={showDialog}
+        pedido={pedidoSelecionado}
+        quantidade={quantidadeEditada}
         onHide={() => setShowDialog(false)}
-        className="custom-dialog"
-      >
-        {pedidoSelecionado && (
-          <div>
-            <p>
-              <strong>Produto:</strong> {pedidoSelecionado.produtoNome}
-            </p>
-            <div className="field">
-              <label>Quantidade:</label>
-              <InputNumber
-                value={quantidadeEditada}
-                onValueChange={(e) => setQuantidadeEditada(e.value ?? 1)}
-                min={1}
-                showButtons
-                buttonLayout="horizontal"
-                incrementButtonIcon="pi pi-plus"
-                decrementButtonIcon="pi pi-minus"
-              />
-            </div>
-
-            <div className="dialog-footer">
-              <Button
-                label="Salvar"
-                className="p-button-success"
-                onClick={handleSalvarEdicao}
-              />
-              <Button
-                label="Cancelar"
-                className="p-button-secondary"
-                onClick={() => setShowDialog(false)}
-              />
-            </div>
-          </div>
-        )}
-      </Dialog>
+        onQuantidadeChange={setQuantidadeEditada}
+        onSalvar={handleSalvarEdicao}
+      />
     </div>
   );
 }

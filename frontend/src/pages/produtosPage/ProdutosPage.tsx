@@ -101,8 +101,8 @@ export default function ProdutosPage() {
       message: "Tem certeza que deseja excluir este produto?",
       header: "Confirmação",
       icon: "pi pi-exclamation-triangle",
-      acceptLabel: "Sim",
       rejectLabel: "Não",
+      acceptLabel: "Sim",
       acceptClassName: "p-button-danger",
       accept: async () => {
         try {
@@ -123,10 +123,10 @@ export default function ProdutosPage() {
   const handleLogout = () => {
     confirmDialog({
       message: "Deseja sair?",
-      header: "Confirmação",
+      header: <span style={{ paddingRight: "1.5rem" }}>Confirmação</span>,
       icon: "pi pi-exclamation-triangle",
-      acceptLabel: "Sim",
       rejectLabel: "Não",
+      acceptLabel: "Sim",
       acceptClassName: "p-button-danger",
       accept: () => {
         localStorage.removeItem("token");
@@ -143,7 +143,6 @@ export default function ProdutosPage() {
       life: 4000,
     });
   };
-
   const showError = (detail: string) => {
     toast.current?.show({
       severity: "error",
@@ -167,9 +166,7 @@ export default function ProdutosPage() {
           tooltipOptions={{ position: "left" }}
         />
       </div>
-
       <h2>Lista de Produtos</h2>
-
       <div className="produtos-lista">
         {produtos.length === 0 ? (
           <p>Nenhum produto disponível.</p>
@@ -182,7 +179,6 @@ export default function ProdutosPage() {
             >
               <p className="preco">Preço: R$ {produto.preco.toFixed(2)}</p>
               <p>Quantidade: {produto.quantidadeEstoque}</p>
-
               <Button
                 label="Fazer Pedido"
                 className="p-button-success botao-fazer-pedido"
@@ -193,7 +189,6 @@ export default function ProdutosPage() {
                 }
                 loading={loadingProdutoId === produto.id}
               />
-
               <div className="botoes-acoes-produto">
                 <Button
                   icon="pi pi-pencil"
@@ -210,7 +205,6 @@ export default function ProdutosPage() {
           ))
         )}
       </div>
-
       <div className="botoes-rodape">
         <Button
           label="Pedidos"

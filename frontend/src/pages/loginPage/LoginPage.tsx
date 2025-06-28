@@ -7,7 +7,6 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "./LoginPage.scss";
 import { Toast } from "primereact/toast";
-import fiescLogo from "../../assets/images/fiescLogo.png";
 
 export default function LoginPage() {
   const toast = useRef<Toast>(null);
@@ -39,7 +38,6 @@ export default function LoginPage() {
       setTimeout(() => emailRef.current?.focus(), 100);
       return;
     }
-
     try {
       const response = await axios.post(
         "http://localhost:5000/api/Auth/login",
@@ -62,7 +60,6 @@ export default function LoginPage() {
       life: 4000,
     });
   };
-
   const showError = (detail: string) => {
     toast.current?.show({
       severity: "error",
@@ -75,12 +72,8 @@ export default function LoginPage() {
   return (
     <div className="login-page">
       <Toast ref={toast} position="top-center" />
-
       <div className="login-card">
-        <img src={fiescLogo} alt="FIESC Logo" className="fiesc-logo" />
-
         <h2>Login</h2>
-
         <div className="field">
           <label>Email:</label>
           <InputText
@@ -90,7 +83,6 @@ export default function LoginPage() {
             placeholder="Digite seu email"
           />
         </div>
-
         <div className="field">
           <label>Senha:</label>
           <Password
@@ -102,9 +94,7 @@ export default function LoginPage() {
             placeholder="Digite sua senha"
           />
         </div>
-
         <Button label="Entrar" className="login-button" onClick={handleLogin} />
-
         <p className="link-cadastro">
           <span onClick={() => navigate("/register")}>Cadastre-se aqui</span>
         </p>

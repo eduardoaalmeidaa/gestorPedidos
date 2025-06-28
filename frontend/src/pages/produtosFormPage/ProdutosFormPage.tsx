@@ -116,7 +116,6 @@ export default function ProdutosFormPage() {
       life: 4000,
     });
   };
-
   const showError = (detail: string) => {
     toast.current?.show({
       severity: "error",
@@ -129,9 +128,7 @@ export default function ProdutosFormPage() {
   return (
     <div className="produtos-form-page">
       <Toast ref={toast} position="top-center" />
-
       <h2>{isEditMode ? "Editar Produto" : "Cadastrar Novo Produto"}</h2>
-
       <div className="field">
         <label>Nome:</label>
         <InputText
@@ -141,7 +138,6 @@ export default function ProdutosFormPage() {
           placeholder="Digite o nome do produto"
         />
       </div>
-
       <div className="field">
         <label>Preço:</label>
         <InputNumber
@@ -154,7 +150,6 @@ export default function ProdutosFormPage() {
           placeholder="Digite o preço"
         />
       </div>
-
       <div className="field">
         <label>Quantidade em Estoque:</label>
         <InputNumber
@@ -165,7 +160,6 @@ export default function ProdutosFormPage() {
           min={1}
         />
       </div>
-
       <div className="buttons-container">
         <Button
           label={isEditMode ? "Salvar Alterações" : "Cadastrar Produto"}

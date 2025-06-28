@@ -116,7 +116,6 @@ const RegisterPage: React.FC = () => {
             placeholder="Digite seu nome"
           />
         </div>
-
         <div className="field">
           <label>Email</label>
           <InputText
@@ -126,7 +125,6 @@ const RegisterPage: React.FC = () => {
             placeholder="Digite seu email"
           />
         </div>
-
         <div className="field">
           <label>Senha</label>
           <Password
@@ -138,7 +136,6 @@ const RegisterPage: React.FC = () => {
             feedback={false}
           />
         </div>
-
         <div className="register-actions">
           <Button
             label="Cadastrar"

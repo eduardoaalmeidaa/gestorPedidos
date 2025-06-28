@@ -1,5 +1,5 @@
 
-# Sistema de Pedidos Simplificado - Processo Seletivo SENAI-SD (01411/2025)
+# Sistema de Pedidos Simplificado
 
 ## Tecnologias utilizadas:
 
@@ -62,8 +62,8 @@
 ### 1. Clone o repositório:
 
 ```bash
-git clone https://github.com/SENAI-SD/prova-csharp-pleno-01411-2025-709.822.911-32.git
-cd prova-csharp-pleno-01411-2025-709.822.911-32
+git clone https://github.com/requestManagerSystem.git
+cd requestManagerSystem
 ```
 
 ### 2. Rode o Docker Compose:
