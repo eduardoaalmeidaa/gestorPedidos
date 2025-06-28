@@ -63,7 +63,7 @@
 
 ```bash
 git clone https://github.com/eduardoaalmeidaa/gestorPedidos.git
-cd gestorPedidos`
+cd gestorPedidos
 ```
 
 ### 2. Rode o Docker Compose:
